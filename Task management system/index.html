@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task management system</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <button onclick="add()">New Task</button>
+        <div class="form-Disign" id="formAdd">
+            <form>
+                <input type="text" id="typeText">
+                <textarea id="typeDescription" cols="30" rows="10"></textarea>
+            </form>
+            <button onclick="submit()">Submit</button>
+        </div>
+        <div id="array">
+            <ul class="list-task">
+                <li>ID</li>
+                <li>Name</li>
+                <li>Description</li>
+            </ul>
+        </div>
+    </section>    
+<script src="js/main.js"></script>
+</body>
+</html>
