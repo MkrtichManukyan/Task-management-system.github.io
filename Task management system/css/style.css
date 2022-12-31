@@ -5,6 +5,9 @@
     text-decoration: none;
 }
 .form-Disign{
+    max-width: 350px;
+    width: 100%;
+    position: absolute;
     display: none;
     background-color: black;
     margin-top: 25px;
