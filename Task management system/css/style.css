@@ -15,4 +15,28 @@
 .list-task{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+}
+.list-task li{
+    max-width: 150px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.status{
+    padding: 20px 0;
+    border-radius: 15px;
+    color: white;
+}
+.colorOne{
+    background-color: blue;
+}
+.colorTwo{
+    background-color: rgb(253 193 40);
+}
+.colorThre{
+    background-color: rgb(253, 150, 40);
+}
+.colorFore{
+    background-color: rgb(28, 188, 74);
 }

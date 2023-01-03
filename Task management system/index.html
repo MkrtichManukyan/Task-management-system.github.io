@@ -12,21 +12,16 @@
     <section>
         <button onclick="add()">New Task</button>
         <div class="form-Disign" id="formAdd">
+            <button onclick="censel()">X</button>
             <form>
-                <button onclick="censel()">X</button>
                 <input type="text" id="typeText">
                 <textarea id="typeDescription" cols="30" rows="10"></textarea>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Status
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><button class="dropdown-item active" value="1">ToDo</button></li>
-                      <li><button class="dropdown-item" value="2">in Progress</button></li>
-                      <li><button class="dropdown-item" value="3">in Reviw</button></li>
-                      <li><button class="dropdown-item" value="4">Done</button></li>
-                    </ul>
-                  </div>
+                <select class="form-select" id="dropdown">
+                    <option value="0" selected>in Progress</option>
+                    <option value="1">in Reviw</option>
+                    <option value="2">ToDo</option>
+                    <option value="3">Done</option>
+                  </select>
             </form>
             <button onclick="submit()">Submit</button>
         </div>
