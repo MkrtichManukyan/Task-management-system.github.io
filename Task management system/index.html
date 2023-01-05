@@ -10,7 +10,23 @@
 </head>
 <body>
     <section>
-        <button onclick="add()">New Task</button>
+        <div class="add-button-block">
+            <button class="add-button" onclick="add()">New Task</button>
+        </div>
+        <div class="form-Disign" id="formEdit">
+            <button onclick="censelEdit()">X</button>
+            <form>
+                <input type="text" id="typeTextEdit">
+                <textarea id="typeDescriptionEdit" cols="30" rows="10"></textarea>
+                <select class="form-select" id="dropdownEdit">
+                    <option value="0" selected>in Progress</option>
+                    <option value="1">in Reviw</option>
+                    <option value="2">ToDo</option>
+                    <option value="3">Done</option>
+                  </select>
+            </form>
+            <button onclick="edit()">Submit</button>
+        </div>
         <div class="form-Disign" id="formAdd">
             <button onclick="censel()">X</button>
             <form>
@@ -27,11 +43,12 @@
         </div>
         <div id="array">
             <ul class="list-task">
-                <li>ID</li>
                 <li>Name</li>
                 <li>Description</li>
                 <li>Creation Date</li>
                 <li>Status</li>
+                <li>Delet</li>
+                <li>Edit</li>
             </ul>
         </div>
     </section>    
