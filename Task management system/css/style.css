@@ -5,15 +5,31 @@
     text-decoration: none;
 }
 body{
-    background-color: rgba(22, 20, 20, 0.748);
+    background-color: #609EB3;
 }
 .form-Disign{
     max-width: 350px;
     width: 100%;
     position: absolute;
+    z-index: 11111;
+    left: 10%;
     display: none;
-    background-color: black;
+    background-color: #394C42;
     margin-top: 25px;
+    padding: 25px;
+    border-radius: 25px;
+}
+.censelDisign{
+    max-width: 25px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+}
+.censelDivDisign{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 25px;
 }
 .list-task{
     display: flex;
@@ -23,6 +39,8 @@ body{
     margin-top: 15px;
 }
 .list-task li{
+    max-width: 250px;
+    width: 100%;
     text-align: center;
     margin-top: 20px;
 }
@@ -53,11 +71,55 @@ body{
     align-items: center;
 }
 .add-button{
-    background-color: maroon;
+    background-color: #406059;
     color: white;
     border: none;
     padding: 10px 15px;
     margin-top: 25px;
     border-radius: 25px;
     font-size: 15px;
+}
+.deletDisign{
+    background-color: #406059;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+.editDisign{
+    background-color: #406059;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+.submitDisign{
+    margin-top: 25px;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 25px;
+}
+.form-input-Disign{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    border: 1px solid white;
+    outline: none;
+    padding: 5px 15px;
+    resize: none;
+}
+.desctiption-textarea{
+    width: 150px;
+    text-align: center;
+    background-color: #609EB3;
+    resize: none;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.desctiption-textarea:hover{
+    opacity: 0.8;
+    background-color: #406059;
+    transition: 1s;
 }
