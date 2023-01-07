@@ -1,0 +1,9 @@
+@media (max-width: 960px) {
+    .list-task{
+        flex-direction: column;
+        padding: 0;
+    }
+    .form-Disign{
+        left: 0;
+    }
+}
