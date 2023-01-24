@@ -36,7 +36,6 @@ downColor = [
 
 function delet(id){
     document.getElementById(id).remove();
-    delete tasks[id];
 }
 
 function editAdd(ids){
