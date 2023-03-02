@@ -113,19 +113,17 @@ function addSubmit(){
     idTask++
 }
 
-
-for (let index = 0; index != tasks.length; index++) {
-    if(tasks[idTask] == null){
-        idTask++
-    }else{
-        let ul = document.createElement('ul');
-        ul.setAttribute("class", "list-task");
-        ul.setAttribute("id", `${idTask}`);
-        ul.innerHTML = "<li>" + "<textarea class='desctiption-textarea' readonly>" + tasks[idTask].taskName + "</textarea>" + "</li>" + "<li>" + "<textarea class='desctiption-textarea' readonly>" + tasks[idTask].taskDescription + "</textarea>" + "<li>" + tasks[idTask].tday + "</li>" + `<li class='status ${downColor[tasks[idTask].stat.value]}' id='statusColor'>` + tasks[idTask].stat.text + "</li>" + "<li>" + `<button class='deletDisign' onclick='delet(${idTask})'>` + "X" + "</button>" + "</li>" + "<li>" +`<button class='editDisign' onclick='editAdd(${idTask})'>` + "Edit" + "</button>" + "</li>";
-        document.getElementById("array").appendChild(ul);
-        idTask++
+if(tasks.length != 0){
+    for (let index = 0; index != tasks.length; index++) {
+        if(tasks[idTask] == null){
+            idTask++
+        }else{
+            let ul = document.createElement('ul');
+            ul.setAttribute("class", "list-task");
+            ul.setAttribute("id", `${idTask}`);
+            ul.innerHTML = "<li>" + "<textarea class='desctiption-textarea' readonly>" + tasks[idTask].taskName + "</textarea>" + "</li>" + "<li>" + "<textarea class='desctiption-textarea' readonly>" + tasks[idTask].taskDescription + "</textarea>" + "<li>" + tasks[idTask].tday + "</li>" + `<li class='status ${downColor[tasks[idTask].stat.value]}' id='statusColor'>` + tasks[idTask].stat.text + "</li>" + "<li>" + `<button class='deletDisign' onclick='delet(${idTask})'>` + "X" + "</button>" + "</li>" + "<li>" +`<button class='editDisign' onclick='editAdd(${idTask})'>` + "Edit" + "</button>" + "</li>";
+            document.getElementById("array").appendChild(ul);
+            idTask++
+        }
     }
 }
-
-console.log(tasks);
-
